@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="8" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-07T18:11:34 IST" name="Default suite" finished-at="2025-11-07T18:11:40 IST" duration-ms="6794">
+    <groups>
+    </groups>
+    <test started-at="2025-11-07T18:11:34 IST" name="Default test" finished-at="2025-11-07T18:11:40 IST" duration-ms="6794">
+      <class name="in.RedBus.Booking">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:34 IST" name="launchBrowser" finished-at="2025-11-07T18:11:36 IST" duration-ms="2351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:36 IST" name="beforeMeth" finished-at="2025-11-07T18:11:36 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMeth -->
+        <test-method signature="enterFrom(java.lang.String)[pri:0, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:36 IST" name="enterFrom" data-provider="frm" finished-at="2025-11-07T18:11:38 IST" duration-ms="1589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chennai]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterFrom -->
+        <test-method is-config="true" signature="afterMeth()[pri:0, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:38 IST" name="afterMeth" finished-at="2025-11-07T18:11:38 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMeth -->
+        <test-method signature="enterTo(java.lang.String)[pri:1, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:38 IST" name="enterTo" data-provider="to" finished-at="2025-11-07T18:11:38 IST" depends-on-methods="in.RedBus.Booking.enterFrom" duration-ms="791" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Trichy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterTo -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:38 IST" name="beforeMeth" finished-at="2025-11-07T18:11:38 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMeth -->
+        <test-method is-config="true" signature="afterMeth()[pri:0, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:38 IST" name="afterMeth" finished-at="2025-11-07T18:11:38 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMeth -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:38 IST" name="beforeMeth" finished-at="2025-11-07T18:11:38 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMeth -->
+        <test-method signature="enterDate()[pri:2, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:38 IST" name="enterDate" finished-at="2025-11-07T18:11:39 IST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterDate -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:39 IST" name="beforeMeth" finished-at="2025-11-07T18:11:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMeth -->
+        <test-method is-config="true" signature="afterMeth()[pri:0, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:39 IST" name="afterMeth" finished-at="2025-11-07T18:11:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMeth -->
+        <test-method signature="searchBuses()[pri:4, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:39 IST" name="searchBuses" finished-at="2025-11-07T18:11:39 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBuses -->
+        <test-method is-config="true" signature="afterMeth()[pri:0, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:39 IST" name="afterMeth" finished-at="2025-11-07T18:11:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMeth -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:39 IST" name="beforeMeth" finished-at="2025-11-07T18:11:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMeth -->
+        <test-method signature="busTitle()[pri:5, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:39 IST" name="busTitle" finished-at="2025-11-07T18:11:40 IST" duration-ms="1684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- busTitle -->
+        <test-method signature="busTitle()[pri:5, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:40 IST" name="busTitle" finished-at="2025-11-07T18:11:40 IST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- busTitle -->
+        <test-method is-config="true" signature="afterMeth()[pri:0, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:40 IST" name="afterMeth" finished-at="2025-11-07T18:11:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMeth -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:40 IST" name="beforeMeth" finished-at="2025-11-07T18:11:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMeth -->
+        <test-method signature="busTitle()[pri:5, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:40 IST" name="busTitle" finished-at="2025-11-07T18:11:40 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- busTitle -->
+        <test-method is-config="true" signature="afterMeth()[pri:0, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:40 IST" name="afterMeth" finished-at="2025-11-07T18:11:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMeth -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:40 IST" name="beforeMeth" finished-at="2025-11-07T18:11:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMeth -->
+        <test-method is-config="true" signature="afterMeth()[pri:0, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:40 IST" name="afterMeth" finished-at="2025-11-07T18:11:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMeth -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:in.RedBus.Booking@52e6fdee]" started-at="2025-11-07T18:11:40 IST" name="quitBrowser" finished-at="2025-11-07T18:11:40 IST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- in.RedBus.Booking -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
