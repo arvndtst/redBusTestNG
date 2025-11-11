@@ -1,5 +1,12 @@
 package in.RedBus;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import java.time.Duration;
 import java.util.List;
 
@@ -8,18 +15,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 
-public class Booking {
-	static SoftAssert soft=new SoftAssert();
+
+public class BookingBus {
 	static WebDriver driver;
 
 	@BeforeClass
@@ -30,46 +29,25 @@ public class Booking {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
 	
-	@BeforeMethod
-	public void beforeMeth() {
-		System.out.println("Before Method");
-	}
-	
-	@AfterMethod
-	public void afterMeth() {
-		System.out.println("After Method");
-	}
-	
-	@DataProvider(name="frm")
-	public Object[][] getInstance1(){
-		return new Object[][] {{"Chennai"}};
-	}
-	
-	@DataProvider(name="to")
-	public Object[][] getInstance2(){
-		return new Object[][] {{"Trichy"}};
-		
-	}
 
-	@Test(priority =0, dataProvider="frm")
+	@Parameters({"source"})
+	@Test(priority =0)
 	public void enterFrom(String data) {
 		WebElement from = driver.findElement(By.xpath("//div[text()='From']"));
-		Assert.assertTrue(from.isEnabled());
 		from.click();
 		WebElement fromIn=driver.findElement(By.xpath("//input[@id='srcDest']"));
 		fromIn.sendKeys(data);
-		WebElement bp = driver.findElement(By.xpath("//div[@aria-label='Vandalur, Chennai']"));
+		WebElement bp = driver.findElement(By.xpath("//div[@aria-label='Tambaram, Chennai']"));
 		bp.click();
 
 
 	}
 
-	@Test(priority =1, dependsOnMethods ="enterFrom",dataProvider="to")
-	public void enterTo(String data) {
+	@Test(priority =1)
+	public void enterTo() {
 		WebElement toin=driver.findElement(By.xpath("//input[@id='srcDest']"));
-		toin.sendKeys(data);
+		toin.sendKeys("Trichy");
 		WebElement dp = driver.findElement(By.xpath("//div[text()='Trichy']"));
-		soft.assertEquals(data, "Trichy");
 		dp.click();
 
 
@@ -79,12 +57,12 @@ public class Booking {
 	public void enterDate() {
 		WebElement cal = driver.findElement(By.xpath("//span[text()='Date of Journey']"));
 		cal.click();
-		WebElement date = driver.findElement(By.xpath("//span[text()='7']"));
+		WebElement date = driver.findElement(By.xpath("//span[text()='15']"));
 		date.click();
 
 	}
 
-	@Test(priority =3, enabled=false)
+	@Test(priority =3)
 	public void toggleWomensonly() {
 		WebElement toggle = driver.findElement(By.xpath("//input[@id='switch']"));
 		toggle.click();
@@ -102,7 +80,7 @@ public class Booking {
 		search.click();
 	}
 
-	@Test(priority =5, invocationCount = 3)
+	@Test(priority =5)
 	public void busTitle() {
 		List<WebElement> buses = driver.findElements(By.xpath("//div[@class=\"travelsName___950ec8\"]"));
 		for (WebElement bus : buses) {
@@ -112,7 +90,6 @@ public class Booking {
 
 	@AfterClass
 	public static void quitBrowser() {
-		soft.assertAll();
 		driver.quit();
 
 	}

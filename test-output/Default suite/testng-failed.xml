@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="in.RedBus.Booking">
+      <class name="in.RedBus.BookingTrain">
         <methods>
-          <include name="afterMeth"/>
           <include name="launchBrowser"/>
-          <include name="enterDate"/>
-          <include name="beforeMeth"/>
           <include name="quitBrowser"/>
+          <include name="enterTo"/>
         </methods>
-      </class> <!-- in.RedBus.Booking -->
+      </class> <!-- in.RedBus.BookingTrain -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

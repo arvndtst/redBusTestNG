@@ -1,63 +1,113 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="14" passed="11" failed="3" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2025-11-11T16:03:11Z" name="Suite" finished-at="2025-11-11T16:04:20Z" duration-ms="68930">
-    <groups>
-    </groups>
-    <test started-at="2025-11-11T16:03:11Z" name="Test" finished-at="2025-11-11T16:04:20Z" duration-ms="68930">
-      <class name="in.RedBus.BookingTrain">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:in.RedBus.BookingTrain@1e6a3214]" started-at="2025-11-11T21:33:11Z" name="launchBrowser" finished-at="2025-11-11T21:33:15Z" duration-ms="4019" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="enterFrom(java.lang.String)[pri:0, instance:in.RedBus.BookingTrain@1e6a3214]" started-at="2025-11-11T21:33:15Z" name="enterFrom" finished-at="2025-11-11T21:33:17Z" duration-ms="1722" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tambaram]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterFrom -->
-        <test-method signature="enterTo(java.lang.String)[pri:0, instance:in.RedBus.BookingTrain@1e6a3214]" started-at="2025-11-11T21:33:17Z" name="enterTo" finished-at="2025-11-11T21:33:17Z" duration-ms="656" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tiruchchirapali]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterTo -->
-        <test-method signature="enterDate()[pri:0, instance:in.RedBus.BookingTrain@1e6a3214]" started-at="2025-11-11T21:33:17Z" name="enterDate" finished-at="2025-11-11T21:33:17Z" duration-ms="133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterDate -->
-        <test-method signature="toggleWomensonly()[pri:0, instance:in.RedBus.BookingTrain@1e6a3214]" started-at="2025-11-11T21:33:17Z" name="toggleWomensonly" finished-at="2025-11-11T21:33:37Z" duration-ms="20045" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='swtch']"}
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 11 21:33:11 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>68 seconds (68930 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='in.RedBus.BookingTrain.toggleWomensonly()'><b>toggleWomensonly</b><br>Test class: in.RedBus.BookingTrain</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;swtch&apos;]&quot;}
   (Session info: chrome=142.0.7444.135)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.36.0', revision: '6d115cfd87'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0.1', java.version: '25'
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0.1&apos;, java.version: &apos;25&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40fcbe7ca0d51ae356b584c099132d4f, findElement {value=//input[@id='swtch'], using=xpath}]
+Command: [40fcbe7ca0d51ae356b584c099132d4f, findElement {value=//input[@id=&apos;swtch&apos;], using=xpath}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: /var/folders/cj/2_qkvv392k1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57064}, goog:processID: 8036, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57064/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 40fcbe7ca0d51ae356b584c099132d4f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='swtch']"}
+Session ID: 40fcbe7ca0d51ae356b584c099132d4f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at in.RedBus.BookingTrain.toggleWomensonly(BookingTrain.java:72)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace690301100", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace690301100'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;swtch&apos;]&quot;}
   (Session info: chrome=142.0.7444.135)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.36.0', revision: '6d115cfd87'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0.1', java.version: '25'
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0.1&apos;, java.version: &apos;25&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40fcbe7ca0d51ae356b584c099132d4f, findElement {value=//input[@id='swtch'], using=xpath}]
+Command: [40fcbe7ca0d51ae356b584c099132d4f, findElement {value=//input[@id=&apos;swtch&apos;], using=xpath}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: /var/folders/cj/2_qkvv392k1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57064}, goog:processID: 8036, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57064/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: 40fcbe7ca0d51ae356b584c099132d4f
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
@@ -86,33 +136,43 @@ Session ID: 40fcbe7ca0d51ae356b584c099132d4f
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toggleWomensonly -->
-        <test-method signature="toggleWomensonly()[pri:0, instance:in.RedBus.BookingTrain@1e6a3214]" started-at="2025-11-11T21:33:37Z" name="toggleWomensonly" finished-at="2025-11-11T21:33:57Z" duration-ms="20024" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='swtch']"}
+</pre></div></td>
+<td>20</td>
+<td>in.RedBus.BookingTrain@1e6a3214</td></tr>
+<tr>
+<td title='in.RedBus.BookingTrain.toggleWomensonly()'><b>toggleWomensonly</b><br>Test class: in.RedBus.BookingTrain</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;swtch&apos;]&quot;}
   (Session info: chrome=142.0.7444.135)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.36.0', revision: '6d115cfd87'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0.1', java.version: '25'
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0.1&apos;, java.version: &apos;25&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40fcbe7ca0d51ae356b584c099132d4f, findElement {value=//input[@id='swtch'], using=xpath}]
+Command: [40fcbe7ca0d51ae356b584c099132d4f, findElement {value=//input[@id=&apos;swtch&apos;], using=xpath}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: /var/folders/cj/2_qkvv392k1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57064}, goog:processID: 8036, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57064/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 40fcbe7ca0d51ae356b584c099132d4f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='swtch']"}
+Session ID: 40fcbe7ca0d51ae356b584c099132d4f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at in.RedBus.BookingTrain.toggleWomensonly(BookingTrain.java:72)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1327128108", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1327128108'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;swtch&apos;]&quot;}
   (Session info: chrome=142.0.7444.135)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.36.0', revision: '6d115cfd87'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0.1', java.version: '25'
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0.1&apos;, java.version: &apos;25&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40fcbe7ca0d51ae356b584c099132d4f, findElement {value=//input[@id='swtch'], using=xpath}]
+Command: [40fcbe7ca0d51ae356b584c099132d4f, findElement {value=//input[@id=&apos;swtch&apos;], using=xpath}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: /var/folders/cj/2_qkvv392k1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57064}, goog:processID: 8036, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57064/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: 40fcbe7ca0d51ae356b584c099132d4f
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
@@ -141,33 +201,43 @@ Session ID: 40fcbe7ca0d51ae356b584c099132d4f
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toggleWomensonly -->
-        <test-method signature="toggleWomensonly()[pri:0, instance:in.RedBus.BookingTrain@1e6a3214]" started-at="2025-11-11T21:33:57Z" name="toggleWomensonly" finished-at="2025-11-11T21:34:17Z" duration-ms="20017" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='swtch']"}
+</pre></div></td>
+<td>20</td>
+<td>in.RedBus.BookingTrain@1e6a3214</td></tr>
+<tr>
+<td title='in.RedBus.BookingTrain.toggleWomensonly()'><b>toggleWomensonly</b><br>Test class: in.RedBus.BookingTrain</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;swtch&apos;]&quot;}
   (Session info: chrome=142.0.7444.135)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.36.0', revision: '6d115cfd87'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0.1', java.version: '25'
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0.1&apos;, java.version: &apos;25&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40fcbe7ca0d51ae356b584c099132d4f, findElement {value=//input[@id='swtch'], using=xpath}]
+Command: [40fcbe7ca0d51ae356b584c099132d4f, findElement {value=//input[@id=&apos;swtch&apos;], using=xpath}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: /var/folders/cj/2_qkvv392k1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57064}, goog:processID: 8036, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57064/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 40fcbe7ca0d51ae356b584c099132d4f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='swtch']"}
+Session ID: 40fcbe7ca0d51ae356b584c099132d4f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at in.RedBus.BookingTrain.toggleWomensonly(BookingTrain.java:72)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace225635226", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace225635226'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;swtch&apos;]&quot;}
   (Session info: chrome=142.0.7444.135)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.36.0', revision: '6d115cfd87'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.0.1', java.version: '25'
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0.1&apos;, java.version: &apos;25&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40fcbe7ca0d51ae356b584c099132d4f, findElement {value=//input[@id='swtch'], using=xpath}]
+Command: [40fcbe7ca0d51ae356b584c099132d4f, findElement {value=//input[@id=&apos;swtch&apos;], using=xpath}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: /var/folders/cj/2_qkvv392k1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57064}, goog:processID: 8036, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57064/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: 40fcbe7ca0d51ae356b584c099132d4f
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
@@ -196,66 +266,72 @@ Session ID: 40fcbe7ca0d51ae356b584c099132d4f
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toggleWomensonly -->
-        <test-method signature="searchBuses()[pri:0, instance:in.RedBus.BookingTrain@1e6a3214]" started-at="2025-11-11T21:34:17Z" name="searchBuses" finished-at="2025-11-11T21:34:18Z" duration-ms="518" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchBuses -->
-        <test-method signature="busTitle()[pri:0, instance:in.RedBus.BookingTrain@1e6a3214]" started-at="2025-11-11T21:34:18Z" name="busTitle" finished-at="2025-11-11T21:34:20Z" duration-ms="1679" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- busTitle -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:in.RedBus.BookingTrain@1e6a3214]" started-at="2025-11-11T21:34:20Z" name="quitBrowser" finished-at="2025-11-11T21:34:20Z" duration-ms="105" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- in.RedBus.BookingTrain -->
-      <class name="in.RedBus.BookingBus">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:in.RedBus.BookingBus@5677323c]" started-at="2025-11-11T21:33:11Z" name="launchBrowser" finished-at="2025-11-11T21:33:14Z" duration-ms="2933" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="enterFrom(java.lang.String)[pri:0, instance:in.RedBus.BookingBus@5677323c]" started-at="2025-11-11T21:33:14Z" name="enterFrom" finished-at="2025-11-11T21:33:16Z" duration-ms="1886" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tambaram]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterFrom -->
-        <test-method signature="enterTo()[pri:0, instance:in.RedBus.BookingBus@5677323c]" started-at="2025-11-11T21:33:16Z" name="enterTo" finished-at="2025-11-11T21:33:16Z" duration-ms="810" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterTo -->
-        <test-method signature="enterDate()[pri:0, instance:in.RedBus.BookingBus@5677323c]" started-at="2025-11-11T21:33:16Z" name="enterDate" finished-at="2025-11-11T21:33:17Z" duration-ms="131" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterDate -->
-        <test-method signature="toggleWomensonly()[pri:0, instance:in.RedBus.BookingBus@5677323c]" started-at="2025-11-11T21:33:17Z" name="toggleWomensonly" finished-at="2025-11-11T21:33:17Z" duration-ms="97" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toggleWomensonly -->
-        <test-method signature="searchBuses()[pri:0, instance:in.RedBus.BookingBus@5677323c]" started-at="2025-11-11T21:33:17Z" name="searchBuses" finished-at="2025-11-11T21:33:17Z" duration-ms="546" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchBuses -->
-        <test-method signature="busTitle()[pri:0, instance:in.RedBus.BookingBus@5677323c]" started-at="2025-11-11T21:33:17Z" name="busTitle" finished-at="2025-11-11T21:33:19Z" duration-ms="1703" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- busTitle -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:in.RedBus.BookingBus@5677323c]" started-at="2025-11-11T21:33:19Z" name="quitBrowser" finished-at="2025-11-11T21:33:19Z" duration-ms="96" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- in.RedBus.BookingBus -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
-</testng-results>
+</pre></div></td>
+<td>20</td>
+<td>in.RedBus.BookingTrain@1e6a3214</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='in.RedBus.BookingBus.busTitle()'><b>busTitle</b><br>Test class: in.RedBus.BookingBus</td>
+<td></td>
+<td>1</td>
+<td>in.RedBus.BookingBus@5677323c</td></tr>
+<tr>
+<td title='in.RedBus.BookingTrain.busTitle()'><b>busTitle</b><br>Test class: in.RedBus.BookingTrain</td>
+<td></td>
+<td>1</td>
+<td>in.RedBus.BookingTrain@1e6a3214</td></tr>
+<tr>
+<td title='in.RedBus.BookingBus.enterDate()'><b>enterDate</b><br>Test class: in.RedBus.BookingBus</td>
+<td></td>
+<td>0</td>
+<td>in.RedBus.BookingBus@5677323c</td></tr>
+<tr>
+<td title='in.RedBus.BookingTrain.enterDate()'><b>enterDate</b><br>Test class: in.RedBus.BookingTrain</td>
+<td></td>
+<td>0</td>
+<td>in.RedBus.BookingTrain@1e6a3214</td></tr>
+<tr>
+<td title='in.RedBus.BookingBus.enterFrom()'><b>enterFrom</b><br>Test class: in.RedBus.BookingBus<br>Parameters: Tambaram</td>
+<td></td>
+<td>1</td>
+<td>in.RedBus.BookingBus@5677323c</td></tr>
+<tr>
+<td title='in.RedBus.BookingTrain.enterFrom()'><b>enterFrom</b><br>Test class: in.RedBus.BookingTrain<br>Parameters: Tambaram</td>
+<td></td>
+<td>1</td>
+<td>in.RedBus.BookingTrain@1e6a3214</td></tr>
+<tr>
+<td title='in.RedBus.BookingBus.enterTo()'><b>enterTo</b><br>Test class: in.RedBus.BookingBus</td>
+<td></td>
+<td>0</td>
+<td>in.RedBus.BookingBus@5677323c</td></tr>
+<tr>
+<td title='in.RedBus.BookingTrain.enterTo()'><b>enterTo</b><br>Test class: in.RedBus.BookingTrain<br>Parameters: Tiruchchirapali</td>
+<td></td>
+<td>0</td>
+<td>in.RedBus.BookingTrain@1e6a3214</td></tr>
+<tr>
+<td title='in.RedBus.BookingBus.searchBuses()'><b>searchBuses</b><br>Test class: in.RedBus.BookingBus</td>
+<td></td>
+<td>0</td>
+<td>in.RedBus.BookingBus@5677323c</td></tr>
+<tr>
+<td title='in.RedBus.BookingTrain.searchBuses()'><b>searchBuses</b><br>Test class: in.RedBus.BookingTrain</td>
+<td></td>
+<td>0</td>
+<td>in.RedBus.BookingTrain@1e6a3214</td></tr>
+<tr>
+<td title='in.RedBus.BookingBus.toggleWomensonly()'><b>toggleWomensonly</b><br>Test class: in.RedBus.BookingBus</td>
+<td></td>
+<td>0</td>
+<td>in.RedBus.BookingBus@5677323c</td></tr>
+</table><p>
+</body>
+</html>
