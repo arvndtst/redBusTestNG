@@ -29,7 +29,7 @@ public class BookingTrain {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.redbus.in/");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.findElement(By.xpath("//span[text()='Train tickets']")).click();
 	}
 	
@@ -68,23 +68,23 @@ public class BookingTrain {
 	}
 
 	@Test(priority =3)
-	public void toggleWomensonly() {
+	public void toggleFreeCancellation() {
 		WebElement toggle = driver.findElement(By.xpath("//input[@id='swtch']"));
 		toggle.click();
 
 	}
 
 	@Test(priority =4)
-		public void searchBuses() {
+		public void searchTrains() {
 		WebElement search = driver.findElement(By.xpath("//button[text()='Search Trains']"));
 		search.click();
 	}
 
 	@Test(priority =5)
-	public void busTitle() {
-		List<WebElement> buses = driver.findElements(By.xpath("//span[@class='trainName___7d75f3']"));
-		for (WebElement bus : buses) {
-			System.out.println(bus.getText());
+	public void trainName() {
+		List<WebElement> trains = driver.findElements(By.xpath("//span[@class='trainName___7d75f3']"));
+		for (WebElement train : trains) {
+			System.out.println(train.getText());
 		}
 	}
 

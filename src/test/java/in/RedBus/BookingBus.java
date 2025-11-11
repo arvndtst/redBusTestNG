@@ -26,7 +26,7 @@ public class BookingBus {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.redbus.in/");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	
 

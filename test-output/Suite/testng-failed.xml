@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Suite]">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]">
   <parameter name="destination" value="Tiruchchirapali"/>
   <parameter name="source" value="Tambaram"/>
   <listeners>
     <listener class-name="in.RedBus.Transformer"/>
   </listeners>
-  <test parallel="classes" name="Test(failed)">
+  <test parallel="tests" name="Test2(failed)">
     <parameter name="destination" value="Tiruchchirapali"/>
     <parameter name="source" value="Tambaram"/>
     <classes>
+      <class name="in.RedBus.BookingTrain">
+        <methods>
+          <include name="toggleFreeCancellation"/>
+          <include name="quitBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- in.RedBus.BookingTrain -->
       <class name="in.RedBus.BookingBus">
         <methods>
           <include name="quitBrowser"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- in.RedBus.BookingBus -->
-      <class name="in.RedBus.BookingTrain">
-        <methods>
-          <include name="quitBrowser"/>
-          <include name="toggleWomensonly"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- in.RedBus.BookingTrain -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

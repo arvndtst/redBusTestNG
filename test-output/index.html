@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -101,17 +101,17 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.RedBus.BookingTrain" class="method navigator-link" hash-for-method="toggleWomensonly">toggleWomensonly</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="in.RedBus.BookingTrain" class="method navigator-link" hash-for-method="toggleFreeCancellation">toggleFreeCancellation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.RedBus.BookingTrain" class="method navigator-link" hash-for-method="toggleWomensonly">toggleWomensonly</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="in.RedBus.BookingTrain" class="method navigator-link" hash-for-method="toggleFreeCancellation">toggleFreeCancellation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.RedBus.BookingTrain" class="method navigator-link" hash-for-method="toggleWomensonly">toggleWomensonly</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="in.RedBus.BookingTrain" class="method navigator-link" hash-for-method="toggleFreeCancellation">toggleFreeCancellation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -123,11 +123,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.RedBus.BookingTrain" class="method navigator-link" hash-for-method="busTitle">busTitle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="in.RedBus.BookingBus" class="method navigator-link" hash-for-method="busTitle">busTitle</a> <!-- method navigator-link -->
@@ -165,17 +160,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.RedBus.BookingTrain" class="method navigator-link" hash-for-method="searchBuses">searchBuses</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="in.RedBus.BookingBus" class="method navigator-link" hash-for-method="searchBuses">searchBuses</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="in.RedBus.BookingTrain" class="method navigator-link" hash-for-method="searchTrains">searchTrains</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="in.RedBus.BookingBus" class="method navigator-link" hash-for-method="toggleWomensonly">toggleWomensonly</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="in.RedBus.BookingTrain" class="method navigator-link" hash-for-method="trainName">trainName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -198,18 +198,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="toggleWomensonly">
-                  </a> <!-- toggleWomensonly -->
-                  <span class="method-name">toggleWomensonly</span>
+                  <a name="toggleFreeCancellation">
+                  </a> <!-- toggleFreeCancellation -->
+                  <span class="method-name">toggleFreeCancellation</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;swtch&apos;]&quot;}
   (Session info: chrome=142.0.7444.135)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0.1&apos;, java.version: &apos;25&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40fcbe7ca0d51ae356b584c099132d4f, findElement {value=//input[@id=&apos;swtch&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: /var/folders/cj/2_qkvv392k1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57064}, goog:processID: 8036, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57064/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 40fcbe7ca0d51ae356b584c099132d4f
+Command: [39b2432748b983d22338a24ed39725c7, findElement {value=//input[@id=&apos;swtch&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: /var/folders/cj/2_qkvv392k1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49991}, goog:processID: 9164, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49991/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39b2432748b983d22338a24ed39725c7
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -221,28 +221,29 @@ Session ID: 40fcbe7ca0d51ae356b584c099132d4f
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at in.RedBus.BookingTrain.toggleWomensonly(BookingTrain.java:72)
+	at in.RedBus.BookingTrain.toggleFreeCancellation(BookingTrain.java:72)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-... Removed 11 stack frames
+... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="toggleWomensonly">
-                  </a> <!-- toggleWomensonly -->
-                  <span class="method-name">toggleWomensonly</span>
+                  <a name="toggleFreeCancellation">
+                  </a> <!-- toggleFreeCancellation -->
+                  <span class="method-name">toggleFreeCancellation</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;swtch&apos;]&quot;}
   (Session info: chrome=142.0.7444.135)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0.1&apos;, java.version: &apos;25&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40fcbe7ca0d51ae356b584c099132d4f, findElement {value=//input[@id=&apos;swtch&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: /var/folders/cj/2_qkvv392k1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57064}, goog:processID: 8036, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57064/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 40fcbe7ca0d51ae356b584c099132d4f
+Command: [39b2432748b983d22338a24ed39725c7, findElement {value=//input[@id=&apos;swtch&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: /var/folders/cj/2_qkvv392k1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49991}, goog:processID: 9164, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49991/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39b2432748b983d22338a24ed39725c7
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -254,28 +255,29 @@ Session ID: 40fcbe7ca0d51ae356b584c099132d4f
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at in.RedBus.BookingTrain.toggleWomensonly(BookingTrain.java:72)
+	at in.RedBus.BookingTrain.toggleFreeCancellation(BookingTrain.java:72)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-... Removed 11 stack frames
+... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="toggleWomensonly">
-                  </a> <!-- toggleWomensonly -->
-                  <span class="method-name">toggleWomensonly</span>
+                  <a name="toggleFreeCancellation">
+                  </a> <!-- toggleFreeCancellation -->
+                  <span class="method-name">toggleFreeCancellation</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;swtch&apos;]&quot;}
   (Session info: chrome=142.0.7444.135)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.0.1&apos;, java.version: &apos;25&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40fcbe7ca0d51ae356b584c099132d4f, findElement {value=//input[@id=&apos;swtch&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: /var/folders/cj/2_qkvv392k1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57064}, goog:processID: 8036, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57064/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 40fcbe7ca0d51ae356b584c099132d4f
+Command: [39b2432748b983d22338a24ed39725c7, findElement {value=//input[@id=&apos;swtch&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: /var/folders/cj/2_qkvv392k1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49991}, goog:processID: 9164, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49991/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39b2432748b983d22338a24ed39725c7
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -287,16 +289,62 @@ Session ID: 40fcbe7ca0d51ae356b584c099132d4f
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at in.RedBus.BookingTrain.toggleWomensonly(BookingTrain.java:72)
+	at in.RedBus.BookingTrain.toggleFreeCancellation(BookingTrain.java:72)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-... Removed 11 stack frames
+... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">in.RedBus.BookingTrain</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterDate">
+                  </a> <!-- enterDate -->
+                  <span class="method-name">enterDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterFrom(Tambaram)">
+                  </a> <!-- enterFrom(Tambaram) -->
+                  <span class="method-name">enterFrom</span>
+                  <span class="parameters">(Tambaram)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterTo(Tiruchchirapali)">
+                  </a> <!-- enterTo(Tiruchchirapali) -->
+                  <span class="method-name">enterTo</span>
+                  <span class="parameters">(Tiruchchirapali)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchTrains">
+                  </a> <!-- searchTrains -->
+                  <span class="method-name">searchTrains</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="trainName">
+                  </a> <!-- trainName -->
+                  <span class="method-name">trainName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -348,51 +396,6 @@ Session ID: 40fcbe7ca0d51ae356b584c099132d4f
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">in.RedBus.BookingTrain</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="busTitle">
-                  </a> <!-- busTitle -->
-                  <span class="method-name">busTitle</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="enterDate">
-                  </a> <!-- enterDate -->
-                  <span class="method-name">enterDate</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="enterFrom(Tambaram)">
-                  </a> <!-- enterFrom(Tambaram) -->
-                  <span class="method-name">enterFrom</span>
-                  <span class="parameters">(Tambaram)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="enterTo(Tiruchchirapali)">
-                  </a> <!-- enterTo(Tiruchchirapali) -->
-                  <span class="method-name">enterTo</span>
-                  <span class="parameters">(Tiruchchirapali)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchBuses">
-                  </a> <!-- searchBuses -->
-                  <span class="method-name">searchBuses</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -402,18 +405,23 @@ Session ID: 40fcbe7ca0d51ae356b584c099132d4f
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;none&quot; name=&quot;Suite&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;in.RedBus.Transformer&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;destination&quot; value=&quot;Tiruchchirapali&quot;/&gt;
+  &lt;test name=&quot;Test1&quot;&gt;
     &lt;parameter name=&quot;source&quot; value=&quot;Tambaram&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;in.RedBus.BookingBus&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+  &lt;test name=&quot;Test2&quot;&gt;
+    &lt;parameter name=&quot;destination&quot; value=&quot;Tiruchchirapali&quot;/&gt;
+    &lt;parameter name=&quot;source&quot; value=&quot;Tambaram&quot;/&gt;
+    &lt;classes&gt;
       &lt;class name=&quot;in.RedBus.BookingTrain&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -425,7 +433,10 @@ Session ID: 40fcbe7ca0d51ae356b584c099132d4f
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -453,66 +464,66 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'toggleWomensonly')
+data.setCell(0, 1, 'toggleFreeCancellation')
 data.setCell(0, 2, 'in.RedBus.BookingTrain')
-data.setCell(0, 3, 20045);
+data.setCell(0, 3, 5067);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'toggleWomensonly')
+data.setCell(1, 1, 'toggleFreeCancellation')
 data.setCell(1, 2, 'in.RedBus.BookingTrain')
-data.setCell(1, 3, 20024);
+data.setCell(1, 3, 5050);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'toggleWomensonly')
+data.setCell(2, 1, 'toggleFreeCancellation')
 data.setCell(2, 2, 'in.RedBus.BookingTrain')
-data.setCell(2, 3, 20017);
+data.setCell(2, 3, 5030);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'enterFrom')
 data.setCell(3, 2, 'in.RedBus.BookingBus')
-data.setCell(3, 3, 1886);
+data.setCell(3, 3, 1912);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'enterFrom')
-data.setCell(4, 2, 'in.RedBus.BookingTrain')
-data.setCell(4, 3, 1722);
+data.setCell(4, 1, 'busTitle')
+data.setCell(4, 2, 'in.RedBus.BookingBus')
+data.setCell(4, 3, 1734);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'busTitle')
-data.setCell(5, 2, 'in.RedBus.BookingBus')
-data.setCell(5, 3, 1703);
+data.setCell(5, 1, 'enterTo')
+data.setCell(5, 2, 'in.RedBus.BookingTrain')
+data.setCell(5, 3, 1237);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'busTitle')
+data.setCell(6, 1, 'trainName')
 data.setCell(6, 2, 'in.RedBus.BookingTrain')
-data.setCell(6, 3, 1679);
+data.setCell(6, 3, 1098);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'enterTo')
-data.setCell(7, 2, 'in.RedBus.BookingBus')
-data.setCell(7, 3, 810);
+data.setCell(7, 1, 'enterFrom')
+data.setCell(7, 2, 'in.RedBus.BookingTrain')
+data.setCell(7, 3, 821);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'enterTo')
-data.setCell(8, 2, 'in.RedBus.BookingTrain')
-data.setCell(8, 3, 656);
+data.setCell(8, 1, 'searchBuses')
+data.setCell(8, 2, 'in.RedBus.BookingBus')
+data.setCell(8, 3, 808);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'searchBuses')
+data.setCell(9, 1, 'enterTo')
 data.setCell(9, 2, 'in.RedBus.BookingBus')
-data.setCell(9, 3, 546);
+data.setCell(9, 3, 768);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'searchBuses')
+data.setCell(10, 1, 'searchTrains')
 data.setCell(10, 2, 'in.RedBus.BookingTrain')
-data.setCell(10, 3, 518);
+data.setCell(10, 3, 636);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'enterDate')
-data.setCell(11, 2, 'in.RedBus.BookingTrain')
-data.setCell(11, 3, 133);
+data.setCell(11, 1, 'toggleWomensonly')
+data.setCell(11, 2, 'in.RedBus.BookingBus')
+data.setCell(11, 3, 141);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'enterDate')
 data.setCell(12, 2, 'in.RedBus.BookingBus')
-data.setCell(12, 3, 131);
+data.setCell(12, 3, 138);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'toggleWomensonly')
-data.setCell(13, 2, 'in.RedBus.BookingBus')
-data.setCell(13, 3, 97);
+data.setCell(13, 1, 'enterDate')
+data.setCell(13, 2, 'in.RedBus.BookingTrain')
+data.setCell(13, 3, 137);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -538,6 +549,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">in.RedBus.BookingBus</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">in.RedBus.BookingTrain</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
@@ -546,63 +564,49 @@ return data;
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">in.RedBus.BookingBus</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">launchBrowser</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">enterFrom(Tambaram)</span>
-                <span class="method-start">2934 ms</span>
+                <span class="method-start">2479 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">in.RedBus.BookingTrain</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">enterFrom(Tambaram)</span>
-                <span class="method-start">4019 ms</span>
+                <span class="method-start">3335 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterTo(Tiruchchirapali)</span>
+                <span class="method-start">4157 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">in.RedBus.BookingBus</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">enterTo</span>
-                <span class="method-start">4821 ms</span>
+                <span class="method-start">4392 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterDate</span>
-                <span class="method-start">5632 ms</span>
+                <span class="method-start">5161 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">in.RedBus.BookingTrain</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">enterTo(Tiruchchirapali)</span>
-                <span class="method-start">5741 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">in.RedBus.BookingBus</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">toggleWomensonly</span>
-                <span class="method-start">5764 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">searchBuses</span>
-                <span class="method-start">5863 ms</span>
+                <span class="method-start">5300 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">in.RedBus.BookingTrain</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">enterDate</span>
-                <span class="method-start">6398 ms</span>
+                <span class="method-start">5395 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">in.RedBus.BookingBus</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">busTitle</span>
-                <span class="method-start">6411 ms</span>
+                <span class="method-name">searchBuses</span>
+                <span class="method-start">5442 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -610,15 +614,19 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">toggleWomensonly</span>
-                <span class="method-start">6532 ms</span>
+                <span class="method-name">toggleFreeCancellation</span>
+                <span class="method-start">5533 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">in.RedBus.BookingBus</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">busTitle</span>
+                <span class="method-start">6251 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">8114 ms</span>
+                <span class="method-start">7985 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -626,26 +634,26 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">toggleWomensonly</span>
-                <span class="method-start">26580 ms</span>
+                <span class="method-name">toggleFreeCancellation</span>
+                <span class="method-start">10586 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">toggleWomensonly</span>
-                <span class="method-start">46606 ms</span>
+                <span class="method-name">toggleFreeCancellation</span>
+                <span class="method-start">15655 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">searchBuses</span>
-                <span class="method-start">66624 ms</span>
+                <span class="method-name">searchTrains</span>
+                <span class="method-start">20688 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">busTitle</span>
-                <span class="method-start">67142 ms</span>
+                <span class="method-name">trainName</span>
+                <span class="method-start">21325 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">68822 ms</span>
+                <span class="method-start">22424 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
